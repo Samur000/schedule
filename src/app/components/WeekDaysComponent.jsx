@@ -1,13 +1,29 @@
+"use client"
+
+import { useState, useEffect } from 'react';
+
 export default function WeekDaysComponent() {
-	const currentDay = new Date().getDay();
+	const [currentDate, setCurrentDate] = useState(new Date());
+
+	// Обновляем дату каждую секунду
+	useEffect(() => {
+		const timer = setInterval(() => {
+			setCurrentDate(new Date());
+		}, 1000);
+
+		// Очищаем таймер при размонтировании компонента
+		return () => clearInterval(timer);
+	}, []);
+
+	const currentDay = currentDate.getDay();
 	const activeDayIndex = currentDay === 0 ? 6 : currentDay - 1;
 	const days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
-	const myData = new Date()
+
 	return (
 		<div className="week-day-container">
 			<div className="data-container">
-				<div className="data">{myData.toLocaleDateString()}</div>
-				<div className="time">{myData.getHours() === 0 ? `0${myData.getHours()}` : myData.getHours()}:{myData.getMinutes()}</div>
+				<div className="data">{currentDate.toLocaleDateString()}</div>
+				<div className="time">{currentDate.toLocaleTimeString()}</div>
 			</div>
 			<div className="week-days">
 				{days.map((day, index) => (
