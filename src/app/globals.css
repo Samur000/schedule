@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
 	--primary: #222222;
-	--accent: #363636;
-	--text: #fff
+	--primary2: #363636;
+	--accent: #007b58;
+	--accent2: #00d498;
+	--text: #fff;
 }
 
 * {
@@ -12,7 +14,6 @@
 	box-sizing: border-box;
 	font-family: sans-serif;
 	font-family: "Montserrat Alternates", sans-serif;
-	font-style: italic;
 }
 a{
 	text-decoration: none;
@@ -43,7 +44,7 @@ header {
 	width: 100%;
 	position: sticky;
 	top: 0;
-	border-bottom: 1px solid var(--accent);
+	border-bottom: 1px solid var(--primary2);
 }
 
 header .container {
@@ -56,6 +57,7 @@ header .logo {
 	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: 1px;
+	font-style: italic;
 }
 
 header img {
@@ -71,7 +73,7 @@ footer{
 	width: 100%;
 	bottom: 0;
 	padding: 15px 30px;
-	border-top: 1px solid var(--accent);
+	border-top: 1px solid var(--primary2);
 	/* box-shadow: 0px -1px 5px var(--text); */
 }
 
@@ -93,4 +95,39 @@ footer svg{
 }
 footer path{
 	stroke: var(--text);
+}
+
+
+/* WeekDay */
+.data-container{
+	display: flex;
+	justify-content: space-between;
+}
+.week-day-container{
+	gap: 10px;
+}
+.week-days{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+.week-day{
+	border-radius: 5px;
+	display: inline-block;
+	padding: 3px 12px;
+	background-color: var(--primary);
+	color: var(--accent2);
+	border: 2px solid var(--accent);
+	font-weight: bold;
+	cursor: pointer;
+}
+.week-day.active{
+	background-color: var(--accent2);
+	color: var(--primary);
+	border: 1px solid var(--accent);
+}
+
+.week-day:hover{
+	opacity: .8;
 }
