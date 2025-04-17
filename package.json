@@ -6,7 +6,8 @@
 		"build": "next build",
 		"export": "next export", 
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d out -t" 
+		"deploy": "gh-pages -d out -t",
+		"dev": "next dev"
 	},
 	"dependencies": {
 		"next": "15.3.0",
