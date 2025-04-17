@@ -1,0 +1,68 @@
+body.dark {
+	background-color: var(--text);
+	color: var(--primary);
+}
+
+body.dark footer path {
+	stroke: var(--primary);
+}
+
+body.dark header,
+body.dark footer {
+	background-color: var(--text);
+}
+
+body.dark footer path {
+	stroke: var(--primary);
+}
+
+
+body.dark .week-day {
+	background-color: var(--text);
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+body.dark .week-day.active {
+	background-color: var(--accent2);
+	color: var(--text);
+	border: 2px solid var(--accent);
+}
+
+
+body.dark .class-item {
+	background-color: var(--text);
+	border: 1px solid var(--primary);
+}
+
+body.dark .class-order,
+body.dark .class-subject {
+	color: var(--primary);
+}
+
+body.dark .class-details {
+	color: var(--accent);
+}
+
+body.dark .class-item.active {
+	background-color: var(--accent2);
+	border-color: var(--accent);
+	color: var(--text);
+}
+
+body.dark .class-item.active .class-order {
+	color: var(--text);
+}
+body.dark .class-item.active .class-subject {
+	color: var(--text);
+}
+body.dark .class-item.active .class-details {
+	color: var(--text);
+}
+body.dark .class-item.active .class-room {
+	color: var(--text);
+}
+
+body.dark {}
+
+body.dark {}

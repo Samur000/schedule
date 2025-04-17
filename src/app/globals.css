@@ -4,9 +4,9 @@
 :root {
 	--primary: #222222;
 	--primary2: #363636;
-	--accent: #007b58;
-	--accent2: #00d498;
-	--text: #fff;
+	--accent: #007050;
+	--accent2: #059b71;
+	--text: #ededed;
 }
 
 * {
@@ -189,9 +189,7 @@ footer path {
 	justify-content: center;
 }
 
-.class-item.active .class-order {
-	color: var(--primary);
-}
+
 
 .class-info {
 	flex: 1;
@@ -203,6 +201,10 @@ footer path {
 	color: var(--text);
 }
 
+.class-item.active .class-order {
+	color: var(--primary);
+}
+
 .class-item.active .class-subject {
 	color: var(--primary);
 }
@@ -212,7 +214,7 @@ footer path {
 	justify-content: space-between;
 	color: var(--accent2);
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .class-item.active .class-details {
@@ -237,4 +239,179 @@ footer path {
 	.class-subject {
 		font-size: 16px;
 	}
+}
+
+/* Profile */
+.profile {
+	background-color: var(--primary2);
+	border-radius: 10px;
+	max-width: 600px;
+	margin: 10px auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.profile-avatar img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid var(--accent);
+}
+
+.profile-info h2 {
+	font-size: 22px;
+	margin-bottom: 5px;
+	color: var(--text);
+}
+
+.profile-status {
+	background-color: var(--accent);
+	color: var(--primary);
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.profile-details {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+.profile-row {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--primary);
+}
+
+.profile-label {
+	font-weight: 600;
+	color: var(--accent2);
+}
+
+.profile-value {
+	color: var(--text);
+}
+
+/* Dark theme styles */
+body.dark {
+	--primary: #222222;
+	--primary2: #363636;
+	--text: #ededed;
+}
+
+body:not(.dark) {
+	--primary: #f5f5f5;
+	--primary2: #ffffff;
+	--accent: #007050;
+	--accent2: #059b71;
+	--text: #333333;
+}
+
+@media (max-width: 500px) {
+	.profile {
+		padding: 15px;
+	}
+
+	.profile-header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.profile-row {
+		flex-direction: column;
+		gap: 5px;
+	}
+}
+
+
+/* Стили для переключателя темы */
+.theme-toggle {
+	position: relative;
+	width: 60px;
+	height: 30px;
+	border: none;
+	border-radius: 15px;
+	background: var(--primary2);
+	cursor: pointer;
+	padding: 0;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.toggle-track {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 15px;
+	background: var(--accent);
+	opacity: 0.3;
+	transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover .toggle-track {
+	opacity: 0.5;
+}
+
+.toggle-thumb {
+	position: absolute;
+	top: 2px;
+	left: 6px;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: var(--accent2);
+	transform: translateX(0);
+	transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.theme-toggle.dark .toggle-thumb {
+	transform: translateX(30px);
+	left: -1px;
+}
+
+.toggle-icons {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 0 8px;
+	pointer-events: none;
+}
+
+.sun-icon,
+.moon-icon {
+	font-size: 16px;
+	transition: opacity 0.3s ease;
+}
+
+.sun-icon {
+	opacity: 1;
+}
+
+.moon-icon {
+	opacity: 0;
+}
+
+.theme-toggle.dark .sun-icon {
+	opacity: 0;
+}
+
+.theme-toggle.dark .moon-icon {
+	opacity: 1;
 }
