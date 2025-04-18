@@ -483,7 +483,7 @@ footer path {
 
 .theme-toggle.dark .toggle-thumb {
 	transform: translateX(30px);
-	left: -1px;
+	left: -2px;
 }
 
 .toggle-icons {
