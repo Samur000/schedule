@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './globals.css';
+import './dark-theme.css';
 
 export default function RootLayout({ children }) {
 	const [isDarkTheme, setIsDarkTheme] = useState(true);
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="ru" className={isDarkTheme ? 'dark' : ''}>
 			<body>
-				<Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
+				<Header toggleTheme={toggleTheme} isDarkTheme={!isDarkTheme} />
 				{children}
 				<Footer />
 			</body>

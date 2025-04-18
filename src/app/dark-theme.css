@@ -53,14 +53,50 @@ body.dark .class-item.active {
 body.dark .class-item.active .class-order {
 	color: var(--text);
 }
+
 body.dark .class-item.active .class-subject {
 	color: var(--text);
 }
+
 body.dark .class-item.active .class-details {
 	color: var(--text);
 }
+
 body.dark .class-item.active .class-room {
 	color: var(--text);
+}
+
+body.dark .profile-card {
+	background-color: var(--text);
+}
+
+body.dark .avatar-border {
+	background: linear-gradient(135deg, var(--accent2), var(--accent));
+}
+
+body.dark .profile-avatar {
+	border: 3px solid var(--text);
+}
+
+body.dark .profile-badge {
+	background: var(--accent);
+	color: var(--text);
+}
+
+body.dark .profile-name {
+	color: var(--accent);
+}
+
+body.dark .profile-username {
+	color: var(--primary);
+}
+
+body.dark .grid-label {
+	color: var(--primary);
+}
+
+body.dark .grid-value {
+	color: var(--accent);
 }
 
 body.dark {}

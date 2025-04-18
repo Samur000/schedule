@@ -1,51 +1,63 @@
-"use client"; // Важно добавить эту директиву для использования хуков
+"use client";
 
-import { useState } from 'react'; // Добавляем импорт useState
+import { useState } from 'react';
 
 export default function Profile() {
-  const [profile] = useState({
-    name: "Иванов Иван Иванович",
-    avatar: "https://dthezntil550i.cloudfront.net/kg/latest/kg1802132010216500004834729/1280_960/557d644f-12f3-49e1-bb66-23c16400540d.png",
-    group: "ИТ-41",
-    course: 4,
-    email: "ivanov@edu.ru",
-    phone: "+7 (123) 456-78-90",
-    username: "ivanov_ii",
-    status: "Студент"
-  });
+	const [profile] = useState({
+		name: "Иванов Иван Иванович",
+		avatar: "https://www.blast.hk/attachments/64804/",
+		group: "ИТ-41",
+		course: 4,
+		email: "ivanov@edu.ru",
+		phone: "+7 (123) 456-78-90",
+		username: "ivanov_ii",
+		status: "Студент"
+	});
 
-  return (
-    <div className="container">
-      <div className="profile">
-        <div className="profile-header">
-          <div className="profile-avatar">
-            <img src={profile.avatar} alt="Аватар" />
-          </div>
-          <div className="profile-info">
-            <h2>{profile.name}</h2>
-            <div className="profile-status">{profile.status}</div>
-          </div>
-        </div>
+	return (
+		<div className="profile">
 
-        <div className="profile-details">
-          <div className="profile-row">
-            <span className="profile-label">Группа:</span>
-            <span className="profile-value">{profile.group} ({profile.course} курс)</span>
-          </div>
-          <div className="profile-row">
-            <span className="profile-label">Имя пользователя:</span>
-            <span className="profile-value">@{profile.username}</span>
-          </div>
-          <div className="profile-row">
-            <span className="profile-label">Почта:</span>
-            <span className="profile-value">{profile.email}</span>
-          </div>
-          <div className="profile-row">
-            <span className="profile-label">Телефон:</span>
-            <span className="profile-value">{profile.phone}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+			<div className="container">
+				<div className="profile-card">
+					<div className="profile-avatar-container">
+						<div className="avatar-border">
+							<img
+								src={profile.avatar}
+								alt="Аватар"
+								className="profile-avatar"
+								onError={(e) => {
+									e.target.onerror = null;
+									e.target.src = "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='40' r='35' fill='%23" +
+										(document.documentElement.classList.contains('dark') ? '059b71' : '007050') + "'/%3E%3C/svg%3E"
+								}}
+							/>
+						</div>
+						<div className="profile-badge">{profile.status}</div>
+					</div>
+
+					<h2 className="profile-name">{profile.name}</h2>
+					<p className="profile-username">@{profile.username}</p>
+
+					<div className="profile-grid">
+						<div className="grid-item">
+							<span className="grid-label">Группа</span>
+							<span className="grid-value">{profile.group}</span>
+						</div>
+						<div className="grid-item">
+							<span className="grid-label">Курс</span>
+							<span className="grid-value">{profile.course}</span>
+						</div>
+						<div className="grid-item">
+							<span className="grid-label">Почта</span>
+							<span className="grid-value">{profile.email}</span>
+						</div>
+						<div className="grid-item">
+							<span className="grid-label">Телефон</span>
+							<span className="grid-value">{profile.phone}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
