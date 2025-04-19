@@ -4,19 +4,7 @@ export default function Header({ toggleTheme, isDarkTheme }) {
 			<header>
 				<div className="container">
 					<div className="logo">My Schedule</div>
-					<button
-						onClick={toggleTheme}
-						className={`theme-toggle ${isDarkTheme ? 'dark' : 'light'}`}
-						aria-label="Toggle theme"
-					>
-						<span className="toggle-track">
-							<span className="toggle-thumb" />
-						</span>
-						<span className="toggle-icons">
-							<span className="sun-icon">🌞</span>
-							<span className="moon-icon">🌙</span>
-						</span>
-					</button>
+					<img src="https://dizturteh.ru/wp-content/themes/tehnikumdisign_theme/assets/img/design/logo.png" alt="" />
 				</div>
 			</header>
 		</>

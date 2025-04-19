@@ -89,6 +89,7 @@ header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px 20px;
 }
 
 header .logo {
@@ -99,9 +100,8 @@ header .logo {
 }
 
 header img {
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
+	width: 40px;
+	height: 40px;
 }
 
 
@@ -296,6 +296,7 @@ footer path {
 .class-info {
 	flex: 1;
 }
+
 .class-time {
 	max-width: 60px;
 }
@@ -428,27 +429,25 @@ footer path {
 }
 
 .profile-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-direction: column;
 	gap: 16px;
 }
 
 .grid-item {
-	background: rgba(43, 86, 74, 0.151);
-	border-radius: 8px;
-	padding: 12px;
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
 }
 
 .grid-item:hover {
-	/* transform: translateY(-2px); */
 	opacity: .8;
 }
 
 .grid-label {
 	display: block;
-	font-size: 0.75rem;
+	font-size: .8rem;
 	color: var(--accent2);
 	margin-bottom: 4px;
 	font-weight: 500;
@@ -465,10 +464,6 @@ footer path {
 
 @media (max-width: 600px) {
 
-	.profile-grid {
-		grid-template-columns: 1fr;
-	}
-
 	.avatar-border {
 		width: 80px;
 		height: 80px;
@@ -484,10 +479,6 @@ footer path {
 		padding: 16px;
 	}
 
-	/* .profile-badge {
-		font-size: 10px;
-		padding: 2px 8px;
-	} */
 }
 
 /* Dark theme styles */
@@ -588,3 +579,50 @@ footer path {
 	opacity: 1;
 }
 
+
+
+/* SETTINGS */
+
+.custom-select {
+	position: relative;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.custom-select select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 8px 30px 8px 12px;
+	border-radius: 4px;
+	border: 1px solid var(--accent2);
+	background-color: var(--primary2);
+	color: var(--accent2);
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.select-arrow {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: var(--accent2);
+}
+
+.dark .custom-select select {
+	background-color: var(--text);
+	color: var(--primary);
+	border-color: #555;
+}
+
+.dark .select-arrow {
+	color: #666;
+}
+
+
+.settings-link{
+	color: var(--accent);
+}
