@@ -99,6 +99,53 @@ body.dark .grid-value {
 	color: var(--accent);
 }
 
+body.dark .date-time-card {
+	background: var(--accent2);
+}
+
+
+
+body.dark .current-date {
+	color: var(--primary);
+}
+
+body.dark .current-time {
+	color: var(--text);
+}
+
+body.dark .day-card {
+	background: var(--text);
+	border: 1px solid var(--accent2);
+}
+
+body.dark .day-name {
+	color: var(--accent);
+}
+
+body.dark .day-card.active {
+	background: var(--accent);
+	border-color: var(--accent2);
+}
+
+body.dark .day-card.active .day-name {
+	color: var(--text);
+	font-weight: 700;
+}
+
+body.dark {}
+
+body.dark {}
+
+body.dark {}
+
+body.dark {}
+
+body.dark {}
+
+body.dark {}
+
+body.dark {}
+
 body.dark {}
 
 body.dark {}
