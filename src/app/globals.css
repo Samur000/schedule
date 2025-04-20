@@ -645,7 +645,7 @@ footer path {
 /* About Page Styles */
 /* About Page Styles - Optimized for Mobile */
 .page-title {
-	font-size: 1rem;
+	font-size: 1.15rem;
 	color: var(--accent2);
 	margin-bottom: 20px;
 	text-align: center;
