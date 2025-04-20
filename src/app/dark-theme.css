@@ -132,15 +132,31 @@ body.dark .day-card.active .day-name {
 	font-weight: 700;
 }
 
-body.dark {}
+body.dark .teacher-card {
+	background-color: var(--text);
+}
 
-body.dark {}
+body.dark .teacher-card.expanded {
+	background-color: var(--accent2);
+}
 
-body.dark {}
 
-body.dark {}
+body.dark .teacher-card.expanded .teacher-name,
+.teacher-card.expanded .teacher-position,
+.teacher-card.expanded .info-label,
+.teacher-card.expanded .expand-icon {
+	color: var(--text);
+}
 
-body.dark {}
+body.dark .teacher-card.expanded .info-value,
+body.dark .teacher-card.expanded .info-value a {
+	color: var(--primary);
+}
+
+
+body.dark .teacher-name {
+	color: var(--primary);
+}
 
 body.dark {}
 
