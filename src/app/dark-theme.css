@@ -158,6 +158,45 @@ body.dark .teacher-name {
 	color: var(--primary);
 }
 
+body.dark .event-card {
+	background: var(--text);
+	border: 1px solid var(--accent);
+}
+
+body.dark .event-meta {
+	color: var(--accent);
+}
+
+
+body.dark .event-title,
+body.dark .event-location,
+body.dark .event-short-desc {
+	color: var(--primary);
+}
+
+body.dark .modal-content {
+	background: var(--text);
+	border: 1px solid var(--accent);
+}
+
+
+body.dark .modal-body h3,
+body.dark .modal-meta p,
+body.dark .modal-desc p {
+	color: var(--primary);
+}
+
+body.dark .modal-meta strong {
+	color: var(--primary);
+}
+
+body.dark .register-btn {
+	background: var(--accent);
+	color: var(--text);
+}
+
+body.dark {}
+
 body.dark {}
 
 body.dark {}
