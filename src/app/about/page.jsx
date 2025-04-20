@@ -14,7 +14,7 @@ const About = () => {
 			room: "2.5",
 			email: "samur@edu.ru",
 			phone: "+7 (123) 456-78-91",
-			avatar: "https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-avatar-of-a-man-wearing-sunglasses-image_2569096.jpg"
+			avatar: "https://shapka-youtube.ru/wp-content/uploads/2022/03/lev-na-avatarku.jpg"
 		},
 		{
 			id: 2,
@@ -24,7 +24,7 @@ const About = () => {
 			room: "3.5",
 			email: "ibragim@edu.ru",
 			phone: "+7 (123) 456-78-92",
-			avatar: "https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-avatar-of-a-man-wearing-sunglasses-image_2569096.jpg"
+			avatar: "https://shapka-youtube.ru/wp-content/uploads/2022/03/lev-na-avatarku.jpg"
 		},
 		{
 			id: 3,
@@ -34,7 +34,7 @@ const About = () => {
 			room: "3.6",
 			email: "abdurahman@edu.ru",
 			phone: "+7 (123) 456-78-93",
-			avatar: "https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-avatar-of-a-man-wearing-sunglasses-image_2569096.jpg"
+			avatar: "https://shapka-youtube.ru/wp-content/uploads/2022/03/lev-na-avatarku.jpg"
 		},
 		{
 			id: 4,
@@ -44,7 +44,7 @@ const About = () => {
 			room: "4.1",
 			email: "omar@edu.ru",
 			phone: "+7 (123) 456-78-94",
-			avatar: "https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-avatar-of-a-man-wearing-sunglasses-image_2569096.jpg"
+			avatar: "https://shapka-youtube.ru/wp-content/uploads/2022/03/lev-na-avatarku.jpg"
 		},
 	];
 
