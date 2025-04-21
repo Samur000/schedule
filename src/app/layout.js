@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
     return (
         <ThemeProvider>
             <html lang="ru">
-                <body>
+                <body class="dark">
                     <Header />
                     {children}
                     <Footer />
