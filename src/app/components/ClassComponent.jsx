@@ -112,7 +112,7 @@ export default function ClassComponent({ selectedDayIndex = new Date().getDay() 
 	return (
 		<div className="classes">
 			<div className="schedule-header">
-				<h3>{faculty} {course} {group !== '-' ? group : 'курс'}</h3>
+				<h3>{faculty} {course} курс {group} группа</h3>
 				<div className="current-day">{selectedDayName}</div>
 			</div>
 

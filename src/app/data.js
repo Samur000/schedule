@@ -1491,13 +1491,13 @@ export const scheduleData = {
 						{
 							"id": 2,
 							"title": "История",
-							"teacher": "ДГ",
+							"teacher": "Д.Г",
 							"classRoom": "2-4"
 						},
 						{
 							"id": 3,
 							"title": "История Дагестана",
-							"teacher": "ДГ",
+							"teacher": "Д.Г",
 							"classRoom": "2-4"
 						}
 					]
@@ -1508,7 +1508,7 @@ export const scheduleData = {
 						{
 							"id": 1,
 							"title": "БЖД",
-							"teacher": "СЭ",
+							"teacher": "С.Э",
 							"classRoom": "2-3"
 						},
 						{
@@ -1520,7 +1520,7 @@ export const scheduleData = {
 						{
 							"id": 3,
 							"title": "Русский язык",
-							"teacher": "ЗИ",
+							"teacher": "З.И",
 							"classRoom": "2-4"
 						}
 					]
@@ -1560,7 +1560,7 @@ export const scheduleData = {
 						{
 							"id": 2,
 							"title": "Черчение",
-							"teacher": "ФШ",
+							"teacher": "Ф.Ш",
 							"classRoom": "3-4"
 						},
 						{
@@ -1585,6 +1585,256 @@ export const scheduleData = {
 							"title": "Графические шрифты",
 							"teacher": "О.А",
 							"classRoom": "4-1"
+						}
+					]
+				}
+			]
+		},
+		2: {
+			"1": [
+				{
+					"weekDay": "Понедельник",
+					"classes": [
+						{
+							"id": 3,
+							"title": "Типографика",
+							"teacher": "А.С",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 4,
+							"title": "Черчение",
+							"teacher": "Ф.Ш",
+							"classRoom": "3-4"
+						},
+						{
+							"id": 5,
+							"title": "Рисунок",
+							"teacher": "А.А",
+							"classRoom": "4-5"
+						},
+						{
+							"id": 6,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
+						}
+					]
+				},
+				{
+					"weekDay": "Вторник",
+					"classes": [
+						{
+							"id": 1,
+							"title": "Живопись",
+							"teacher": "А.А",
+							"classRoom": "4-5"
+						},
+						{
+							"id": 2,
+							"title": "Английский язык",
+							"teacher": "С",
+							"classRoom": "2-3"
+						}
+					]
+				},
+				{
+					"weekDay": "Среда",
+					"classes": [
+						{
+							"id": 2,
+							"title": "Проектная графика в дизайне",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 3,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
+						},
+						{
+							"id": 4,
+							"title": "Живопись",
+							"teacher": "А.А",
+							"classRoom": "4-5"
+						},
+						{
+							"id": 5,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
+						}
+					]
+				},
+				{
+					"weekDay": "Четверг",
+					"classes": [
+						{
+							"id": 3,
+							"title": "Дизайн упаковки",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 4,
+							"title": "Инф. диз. макетов",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 5,
+							"title": "Рисунок по представлению",
+							"teacher": "О.А",
+							"classRoom": "4-1"
+						}
+					]
+				},
+				{
+					"weekDay": "Пятница",
+					"classes": [
+						{
+							"id": 2,
+							"title": "Живопись",
+							"teacher": "А.А",
+							"classRoom": "4-5"
+						},
+						{
+							"id": 3,
+							"title": "История",
+							"teacher": "Д.Г",
+							"classRoom": "2-4"
+						},
+						{
+							"id": 4,
+							"title": "Рисунок по представлению",
+							"teacher": "О.А",
+							"classRoom": "4-1"
+						}
+					]
+				}
+			]
+		},
+		3: {
+			"1": [
+				{
+					"weekDay": "Понедельник",
+					"classes": [
+						{
+							"id": 4,
+							"title": "Проектная графика",
+							"teacher": "А.С",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 5,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
+						},
+						{
+							"id": 6,
+							"title": "Фир. стиль и подготовка диз.макетов к печати",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						}
+					]
+				},
+				{
+					"weekDay": "Вторник",
+					"classes": [
+						{
+							"id": 4,
+							"title": "Интерактивные технологии",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 5,
+							"title": "Живопись",
+							"teacher": "А.А",
+							"classRoom": "4-5"
+						},
+						{
+							"id": 6,
+							"title": "Проектная графика",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						}
+					]
+				},
+				{
+					"weekDay": "Среда",
+					"classes": [
+						{
+							"id": 1,
+							"title": "Интерактивные технологии",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 2,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
+						},
+						{
+							"id": 3,
+							"title": "Многостраничный дизайн",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 4,
+							"title": "Интерактивные технологии",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						}
+					]
+				},
+				{
+					"weekDay": "Четверг",
+					"classes": [
+						{
+							"id": 4,
+							"title": "Черчение",
+							"teacher": "Ф.Ш",
+							"classRoom": "3-4"
+						},
+						{
+							"id": 5,
+							"title": "Компьютерный дизайн",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 6,
+							"title": "Проектная графика",
+							"teacher": "А.С",
+							"classRoom": "3-1"
+						}
+					]
+				},
+				{
+					"weekDay": "Пятница",
+					"classes": [
+						{
+							"id": 4,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
+						},
+						{
+							"id": 5,
+							"title": "Фир. стиль и подготовка диз.макетов к печати",
+							"teacher": "П.З",
+							"classRoom": "3-1"
+						},
+						{
+							"id": 6,
+							"title": "Композиция",
+							"teacher": "И.Х",
+							"classRoom": "4-4"
 						}
 					]
 				}
