@@ -375,6 +375,132 @@ export const scheduleData = {
 				}
 			],
 
+		},
+		3: {
+			'-': [
+				{
+					weekDay: 'Понедельник',
+					classes: [
+						{
+							id: 3,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+						{
+							id: 4,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5',
+							isActive: true
+						},
+					]
+				},
+				{
+					weekDay: 'Вторник',
+					classes: [
+						{
+							id: 4,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+						{
+							id: 5,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+						{
+							id: 6,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+					]
+				},
+				{
+					weekDay: 'Среда',
+					classes: [
+						{
+							id: 1,
+							title: 'киб.без',
+							teacher: 'Ибрагим Икрамович',
+							classRoom: '3.5',
+							isActive: true
+						},
+						{
+							id: 2,
+							title: 'киб.без',
+							teacher: 'Ибрагим Икрамович',
+							classRoom: '3.5'
+						},
+						{
+							id: 3,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+						{
+							id: 4,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+					]
+				},
+
+				{
+					weekDay: 'Четверг',
+					classes: [
+						{
+							id: 1,
+							title: 'киб.без',
+							teacher: 'Ибрагим Икрамович',
+							classRoom: '3.5',
+							isActive: true
+						},
+						{
+							id: 2,
+							title: 'киб.без',
+							teacher: 'Ибрагим Икрамович',
+							classRoom: '3.5',
+							isActive: true
+						},
+						{
+							id: 3,
+							title: 'киб.без',
+							teacher: 'Ибрагим Икрамович',
+							classRoom: '3.5',
+							isActive: true
+						},
+						{
+							id: 4,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5'
+						},
+					]
+				},
+				{
+					weekDay: 'Пятница',
+					classes: [
+						{
+							id: 1,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2.5',
+							isActive: true
+						},
+						{
+							id: 2,
+							title: 'Киб. без',
+							teacher: 'Ибрагим Икрамович',
+							classRoom: '3.5'
+						},
+					]
+				}
+			]
 		}
 	},
 };
