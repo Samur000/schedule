@@ -18,12 +18,9 @@ html {
 body,
 header,
 footer,
-.profile-card,
 .class-item,
 .week-day,
 .grid-item,
-.profile-avatar-container,
-.profile-badge,
 .theme-toggle {
 	transition:
 		background-color var(--transition-duration) var(--transition-timing),
@@ -35,11 +32,6 @@ svg path {
 	transition: stroke var(--transition-duration) var(--transition-timing);
 }
 
-/* Для градиентов (которые не анимируются стандартно) */
-.profile-card::before,
-.avatar-border {
-	transition: opacity var(--transition-duration) var(--transition-timing);
-}
 
 * {
 	margin: 0;
@@ -75,6 +67,7 @@ header,
 footer {
 	z-index: 999;
 	background-color: var(--primary);
+
 }
 
 /* Header */
@@ -83,6 +76,7 @@ header {
 	position: sticky;
 	top: 0;
 	border-bottom: 1px solid #c6c6c6;
+	width: 100%;
 }
 
 header .container {
@@ -90,6 +84,8 @@ header .container {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 header .logo {
@@ -120,6 +116,8 @@ footer .container {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 footer a {
@@ -347,156 +345,6 @@ footer path {
 	}
 }
 
-/* Profile */
-/* Profile Styles */
-
-.profile {
-	margin-bottom: 50px;
-}
-
-.profile-card {
-	background-color: var(--primary2);
-	border-radius: 16px;
-	max-width: 480px;
-	margin: 0px auto;
-	padding: 30px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-	text-align: center;
-	position: relative;
-	overflow: hidden;
-}
-
-.profile-card::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 4px;
-	background: linear-gradient(90deg, var(--accent), var(--accent2));
-}
-
-.profile-avatar-container {
-	position: relative;
-	width: fit-content;
-	margin: 0 auto 20px;
-}
-
-.avatar-border {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	padding: 4px;
-	background: linear-gradient(135deg, var(--accent), var(--accent2));
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.profile-avatar {
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 3px solid var(--primary2);
-}
-
-.profile-badge {
-	position: absolute;
-	bottom: -8px;
-	right: -8px;
-	background: var(--accent);
-	color: var(--primary);
-	padding: 4px 12px;
-	border-radius: 12px;
-	font-size: 12px;
-	font-weight: 600;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.profile-name {
-	font-size: 1.5rem;
-	font-weight: 600;
-	margin-bottom: 4px;
-	color: var(--text);
-}
-
-.profile-username {
-	color: var(--accent2);
-	font-size: 0.9rem;
-	margin-bottom: 24px;
-	opacity: 0.8;
-}
-
-.profile-grid {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-}
-
-.grid-item {
-	transition: 0.2s ease-in-out;
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-}
-
-.grid-item:hover {
-	opacity: .8;
-}
-
-.grid-label {
-	display: block;
-	font-size: .8rem;
-	color: var(--accent2);
-	margin-bottom: 4px;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-}
-
-.grid-value {
-	display: block;
-	font-size: 1rem;
-	color: var(--text);
-	font-weight: 500;
-}
-
-@media (max-width: 600px) {
-
-	.avatar-border {
-		width: 80px;
-		height: 80px;
-	}
-
-	.profile-name {
-		font-size: 1.3rem;
-	}
-}
-
-@media (max-width: 400px) {
-	.profile-card {
-		padding: 16px;
-	}
-
-}
-
-/* Dark theme styles */
-@media (max-width: 500px) {
-	.profile {
-		padding: 15px;
-	}
-
-	.profile-header {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.profile-row {
-		flex-direction: column;
-		gap: 5px;
-	}
-}
 
 
 /* Стили для переключателя темы */
@@ -629,7 +477,6 @@ footer path {
 	justify-content: end;
 	gap: 10px;
 	color: var(--accent2);
-	padding-bottom: 10px;
 }
 
 .settings-link svg {
@@ -788,9 +635,10 @@ footer path {
 
 /* EVENTS */
 
-.events-page{
+.events-page {
 	padding-bottom: 20px;
 }
+
 .page-title {
 	font-size: 1.5rem;
 	color: var(--accent2);

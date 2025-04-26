@@ -1,0 +1,348 @@
+.profile-page {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.profile-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.profile-header h1 {
+	color: var(--accent2);
+	font-size: 1.8rem;
+}
+
+.back-link {
+	color: var(--accent2);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.back-link:hover {
+	text-decoration: underline;
+}
+
+.profile-loading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+
+.spinner {
+	width: 50px;
+	height: 50px;
+	border: 5px solid var(--accent);
+	border-top-color: transparent;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	margin-bottom: 20px;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.profile-card {
+	background: var(--primary2);
+	border-radius: 16px;
+	padding: 30px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.profile-card.set{
+	margin: 0 15px;
+}
+.profile-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+.profile-avatar-container {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto 20px;
+}
+
+.avatar-border {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	padding: 4px;
+	background: linear-gradient(135deg, var(--accent), var(--accent2));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-avatar {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid var(--primary2);
+}
+
+.profile-badge {
+	position: absolute;
+	bottom: -8px;
+	right: 3px;
+	background: var(--accent);
+	color: var(--primary);
+	padding: 4px 12px;
+	border-radius: 12px;
+	font-size: 12px;
+	font-weight: 600;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 4px;
+	color: var(--text);
+}
+
+.profile-username {
+	color: var(--accent2);
+	font-size: 0.9rem;
+	margin-bottom: 24px;
+	opacity: 0.8;
+}
+
+.profile-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.grid-item {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgba(var(--accent2-rgb), 0.2);
+}
+
+.grid-label {
+	font-size: 0.8rem;
+	color: var(--accent2);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.grid-value {
+	font-size: 1rem;
+	color: var(--text);
+	font-weight: 500;
+}
+
+.edit-btn {
+	background: var(--accent);
+	color: var(--primary);
+	border: none;
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.edit-btn:hover {
+	opacity: .8;
+}
+
+/* Стили формы редактирования */
+.profile-form {
+	background: var(--primary2);
+	border-radius: 16px;
+	padding: 30px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+	background: var(--primary2);
+}
+
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 8px;
+	color: var(--accent2);
+	font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+	width: 100%;
+	padding: 12px;
+	border-radius: 8px;
+	border: 1px solid var(--accent);
+	background: var(--primary);
+	color: var(--text);
+	font-size: 1rem;
+}
+
+
+.form-row {
+	display: flex;
+	gap: 20px;
+}
+
+.form-row .form-group {
+	flex: 1;
+}
+
+.form-actions {
+	display: flex;
+	gap: 15px;
+	margin-top: 30px;
+}
+
+.save-btn {
+	background: var(--accent);
+	color: var(--primary);
+	border: none;
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	flex: 1;
+}
+
+.save-btn:hover {
+	background: var(--accent2);
+}
+
+.cancel-btn {
+	background: transparent;
+	color: var(--accent2);
+	border: 1px solid var(--accent2);
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	flex: 1;
+}
+
+.cancel-btn:hover {
+	background: rgba(var(--accent2-rgb), 0.1);
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+
+	.profile-card,
+	.profile-form {
+		padding: 20px;
+	}
+
+	.avatar-border {
+		width: 100px;
+		height: 100px;
+	}
+
+	.profile-name {
+		font-size: 1.3rem;
+	}
+
+	.form-row {
+		flex-direction: column;
+		gap: 15px;
+	}
+}
+
+/* Стили для загрузки аватарки */
+.avatar-upload {
+	margin-bottom: 25px;
+}
+
+.avatar-preview-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.avatar-preview {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid var(--accent);
+}
+
+.upload-btn {
+	background: var(--accent);
+	color: var(--primary);
+	border: none;
+	padding: 8px 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 14px;
+}
+
+.upload-btn:hover {
+	background: var(--accent2);
+}
+
+.file-error {
+	color: #ff4d4f;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.file-hint {
+	color: var(--accent2);
+	font-size: 12px;
+	opacity: 0.8;
+	text-align: center;
+}
+
+/* Отключенная кнопка сохранения */
+.save-btn:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+
+
+/* DARK */
+
+body.dark .edit-btn{
+	color: var(--text);
+	background: var(--accent);
+}
+body.dark .profile-form {
+	background-color: #fff;
+}
+body.dark .form-group input,
+body.dark .form-group select {
+	background: var(--text);
+	color: var(--primary);
+}
+body.dark .save-btn,
+body.dark .upload-btn{
+	color: var(--text);
+}

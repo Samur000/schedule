@@ -1,0 +1,330 @@
+/* Стили для сообщения о выходном */
+.no-schedule-message,
+.weekend-message {
+	font-size: 1.3rem;
+	background: var(--primary2);
+	color: var(--text);
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	animation: fadeInUp 0.8s ease-out, floating 3s ease-in-out infinite;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 400px;
+	border: 1px solid var(--accent);
+	position: relative;
+	overflow: hidden;
+}
+
+body.dark .weekend-message,
+body.dark .no-schedule-message {
+	background: var(--text);
+	color: var(--primary2);
+}
+
+.no-schedule-message::before,
+.weekend-message::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent), var(--accent2));
+	animation: progressBar 8s linear infinite;
+}
+
+/* Стили для сообщения об отсутствии расписания */
+body.dark .no-schedule-message {
+	color: var(--primary2);
+	background: var(--text);
+}
+
+
+/* Анимации */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-8px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(var(--accent2-rgb), 0.4);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(var(--accent2-rgb), 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(var(--accent2-rgb), 0);
+	}
+}
+
+@keyframes progressBar {
+	0% {
+		width: 0%;
+		left: 0;
+		right: auto;
+	}
+
+	50% {
+		width: 100%;
+		left: 0;
+		right: auto;
+	}
+
+	51% {
+		width: 0%;
+		left: auto;
+		right: 0;
+	}
+
+	100% {
+		width: 100%;
+		left: auto;
+		right: 0;
+	}
+}
+
+@keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+	}
+
+	60% {
+		transform: translateY(-10px);
+	}
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 500px) {
+
+	.weekend-message,
+	.no-schedule-message {
+		font-size: 1.1rem;
+		padding: 1.5rem;
+		margin: 15px 20px;
+	}
+
+	
+}
+
+
+/* Основные стили для расписания */
+
+.schedule-header {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: -25px;
+	margin-bottom: 0;
+}
+
+.schedule-header h3 {
+	color: var(--accent2);
+	font-size: 1.2rem;
+	margin-bottom: 5px;
+}
+
+.current-day {
+	font-size: 1.1rem;
+	color: var(--text);
+	font-weight: 500;
+}
+
+/* Стили для карточки занятия */
+
+
+.class-room {
+	font-weight: bold;
+	color: var(--accent2);
+	min-width: 40px;
+	text-align: center;
+}
+
+.class-time {}
+
+.class-item.active .class-room {
+	color: var(--primary);
+}
+
+/* Стили для сообщений */
+.weekend-message,
+.no-schedule-message,
+.no-classes-message {
+	font-size: 1.2rem;
+	color: var(--text);
+	padding: 2rem;
+	background: var(--primary2);
+	border-radius: 12px;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 400px;
+	border: 1px solid var(--accent);
+	position: relative;
+	overflow: hidden;
+}
+
+.weekend-message {
+	animation: fadeInUp 0.8s ease-out, floating 3s ease-in-out infinite;
+}
+
+.weekend-message::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--accent), var(--accent2));
+	animation: progressBar 8s linear infinite;
+}
+
+
+
+.no-classes-message {
+	animation: fadeInUp 0.8s ease-out;
+}
+
+.weekend-icon,
+.error-icon,
+.info-icon {
+	font-size: 2rem;
+	margin-bottom: 10px;
+	display: inline-block;
+	animation: bounce 2s infinite;
+}
+
+.weekend-sub,
+.schedule-details {
+	font-size: 0.9rem;
+	opacity: 0.8;
+	margin-top: 8px;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-8px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(var(--accent2-rgb), 0.4);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(var(--accent2-rgb), 0);
+	}
+
+	100% {
+		boxShadow: 0 0 0 0 rgba(var(--accent2-rgb), 0);
+	}
+}
+
+@keyframes progressBar {
+	0% {
+		width: 0%;
+		left: 0;
+		right: auto;
+	}
+
+	50% {
+		width: 100%;
+		left: 0;
+		right: auto;
+	}
+
+	51% {
+		width: 0%;
+		left: auto;
+		right: 0;
+	}
+
+	100% {
+		width: 100%;
+		left: auto;
+		right: 0;
+	}
+}
+
+@keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-15px);
+	}
+
+	60% {
+		transform: translateY(-7px);
+	}
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 500px) {
+
+	.weekend-message,
+	.no-schedule-message,
+	.no-classes-message {
+		font-size: 1rem;
+		padding: 1.5rem;
+	}
+}
