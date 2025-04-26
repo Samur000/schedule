@@ -13,7 +13,7 @@ export default function ProfilePage() {
 		name: '',
 		faculty: 'ИСП',
 		course: 1,
-		group: '101',
+		group: '1',
 		email: '',
 		phone: '',
 		avatar: ''
@@ -168,7 +168,7 @@ export default function ProfilePage() {
 						>
 							<option value="ИСП">ИСП (Информационные системы и программирование)</option>
 							<option value="ДО">ДО (Дизайн Одежды)</option>
-							<option value="ДС">Дизайн Среды</option>
+							<option value="ДС">ДС (Дизайн Среды)</option>
 							<option value="ГД">ГД (Графический дизайн)</option>
 							<option value="АРХ">АРХ (Архитекторы)</option>
 						</select>
@@ -196,7 +196,6 @@ export default function ProfilePage() {
 							onChange={handleInputChange}
 							required
 						>
-							<option value="-">нет</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
