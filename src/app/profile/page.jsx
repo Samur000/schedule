@@ -248,7 +248,6 @@ export default function ProfilePage() {
 					</div>
 
 					<h2 className="profile-name">{profile.name}</h2>
-					<p className="profile-username">@{profile.username || 'username'}</p>
 
 					<div className="profile-grid">
 						<div className="grid-item">
