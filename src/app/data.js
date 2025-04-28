@@ -137,7 +137,7 @@ export const scheduleData = {
 							classRoom: '3-5'
 						},
 						{
-							id: 3,
+							id: 6,
 							title: 'Операционные системы и среды',
 							teacher: 'Самур Гулиевич',
 							classRoom: '2-5'
