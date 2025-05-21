@@ -11,7 +11,8 @@ export default function RootLayout({ children }) {
 	return (
 		<ThemeProvider>
 			<html lang="ru">
-				<Head>
+				<head>
+
 					{/* Основные SEO-теги */}
 					<title>Онлайн расписание | Техникум дизайна</title>
 					<meta name="description" content="Актуальное расписание занятий и мероприятий для студентов Техникума дизайна. 
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
 					<link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/17838/17838545.png" />
 					<link rel="icon" type="image/png" sizes="16x16" href="https://cdn-icons-png.flaticon.com/512/17838/17838545.png" />
 					<link rel="manifest" href="/site.webmanifest" />
-				</Head>
+				</head>
 				<body className='dark'>
 					<Header />
 					<ProfileProvider>
