@@ -137,7 +137,7 @@ export const scheduleData = {
 							classRoom: '3-5'
 						},
 						{
-							id: 6,
+							id: 3,
 							title: 'Операционные системы и среды',
 							teacher: 'Самур Гулиевич',
 							classRoom: '2-5'
@@ -423,28 +423,29 @@ export const scheduleData = {
 					classes: [
 						{
 							id: 1,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2-5'
+						},
+						{
+							id: 2,
+							title: 'Web разработка',
+							teacher: 'Самур Гулиевич',
+							classRoom: '2-5'
+						},
+						{
+							id: 3,
 							title: 'Кибер безопасноть',
 							teacher: 'Ибрагим Икрамович',
 							classRoom: '3-5',
 						},
 						{
-							id: 2,
+							id: 4,
 							title: 'Кибер безопасноть',
 							teacher: 'Ибрагим Икрамович',
 							classRoom: '3-5'
 						},
-						{
-							id: 3,
-							title: 'Web разработка',
-							teacher: 'Самур Гулиевич',
-							classRoom: '2-5'
-						},
-						{
-							id: 4,
-							title: 'Web разработка',
-							teacher: 'Самур Гулиевич',
-							classRoom: '2-5'
-						},
+
 					]
 				},
 
@@ -1840,7 +1841,8 @@ export const scheduleData = {
 				}
 			]
 		}
-	}
+	},
+
 };
 export const lessonTimes = [
 	{ id: 1, start: '08:30', end: '09:40' },
